@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>"sitedeteste"</title>
+    </head>
+    <body>
+       <form action="" method="get" accept-charset="utf-8">
+        <label for="entrada">insira qualquer numero</label>
+        <input type="number" name="entrada" id="entrada" placeholder="0" value="" />
+        <button type="button" onclick="testar()">Testar</button>
+           
+       </form>
+       
+       <p id="seeresult"></p>
+       
+       
+      <script>
+        function testar() {
+         let result
+         let n = document.getElementById("entrada").value
+         if(n%2 ==! 0){
+            r = "o numero é impar"
+            } else{
+            r = "o numero é par"
+          }
+          let paragrafo = document.getElementById("seeresult")
+          paragrafo.innerHTML = r
+        }
+           
+           
+           
+            
+        </script>
+    </body>
+</html>
