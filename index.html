@@ -17,20 +17,20 @@
        
       <script>
         function testar() {
-         let result
-         let n = document.getElementById("entrada").value
+ let input = document.getElementById("entrada").value
+ let paragrafo = document.getElementById("seeresult")
+         if(!/^\d+$/.test(input)){
+  paragrafo.innerHTML = "invalido!"
+         } else {
+     let n = document.getElementById("entrada").value
          if(n%2 === 0){
             r = "o numero é par"
             } else{
             r = "o numero é impar"
           }
-          let paragrafo = document.getElementById("seeresult")
           paragrafo.innerHTML = r
+         }
         }
-           
-           
-           
-            
         </script>
     </body>
 </html>
